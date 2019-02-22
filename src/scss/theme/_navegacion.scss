@@ -1,0 +1,90 @@
+.full-container__navigation {
+    background-color: $light;
+    position: sticky;
+    top: 0;
+    height: 100px;
+}
+
+.container {
+    &--header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__brand {
+        flex-basis: 90px;
+    }
+    &__navegation{
+         @media screen and (min-width: 1024px){
+            flex-basis: 768px;
+         }
+    }
+
+    &__nav {
+        overflow-y: auto;
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        height: calc(100% - 100px);
+        background-color: $coffee;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        transition: right 0.3s cubic-bezier(0, .99, 1, .01);
+        @media screen and (min-width: 1024px){
+        		transition: none;
+        		flex-direction: row;
+        		position: static;
+        		background-color: $light;
+        		overflow-y: inherit;
+        		width: 100%;
+                justify-content: space-between;
+        }
+    }
+
+    &__link {
+        color: $light;
+        font-size: $text-lg;
+        text-transform: uppercase;
+        font-weight: bold;
+        display: inline-block;
+        padding: $space-sm 0 $space-sm $space-md;
+
+        @media screen and (orientation: landscape) {
+        	color: $light;
+            padding: 5px 0 5px $space-md;
+            font-size: $text-md;
+        }
+
+        &:hover {
+            background-color: $green;
+            @media screen and (min-width: 1024px){
+                background-color: transparent;
+                color: green;
+            }
+        }
+         @media screen and (min-width: 1024px){
+         	padding: 0;
+            color: $dark;
+         }
+    }
+    &__toogle{
+    	@media screen and (min-width: 1024px){
+        		display: none;
+        }
+    }
+}
+
+
+
+
+
+
+// UTILIDAD PARA EL MENU TOOGLE
+
+.active {
+    right: 0;
+}

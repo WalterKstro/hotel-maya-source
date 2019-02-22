@@ -1,0 +1,28 @@
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body,html{
+	font-size: 16px;	
+	
+}
+
+h1,h2,h2{
+	font-family: $font-header,Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+p{
+	font-family: $font-text,Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+a{
+	text-decoration: none;
+	font-family: $font-text,Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}

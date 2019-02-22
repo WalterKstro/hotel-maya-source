@@ -1,0 +1,11 @@
+.full-container{
+	max-width: 1920px;
+	width: 90vmin;
+	margin-right: auto;
+	margin-left: auto;
+	&{
+		@media screen and (orientation:landscape){
+			width: 90vmax;
+		}
+	}
+}

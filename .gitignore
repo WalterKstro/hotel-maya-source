@@ -1,0 +1,11 @@
+###node_modules###
+node_modules
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+### folter dist ###
+dist/
