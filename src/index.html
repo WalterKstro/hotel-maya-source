@@ -34,14 +34,49 @@
                 </nav>
                 <!-- Boton toogle -->
                 <button class="hamburger hamburger--slider container__toogle" type="button">
-					  <span class="hamburger-box">
-					    <span class="hamburger-inner"></span>
-					  </span>
-					</button>
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
             </div>
         </header>
     </div>
     <!-- FIN NAVEGACION PRINCIPAL TOP -->
+    <!-- BANNER MAKE RESERVATION -->
+    <div class="full-container__banner">
+       <img srcset="images/banner_movil.jpg 480w,images/banner_tablet.jpg 900w,images/banner_desktop.jpg 1920w" alt="banner logo">
+        <div class="banner__content full-container">
+            <h1 class="banner__content--title">Make your <span>reservation today</span></h1>
+            <button type="button" class="banner__content--get format-button">Get a Reservation</button>
+        </div>
+    </div>
+    <!-- FIN BANNER MAKE RESERVATION -->
+
+    <!-- FORMULARIO DE DIPONIBLE -->
+    <div class="full-container__available">
+        <aside class="full-container">
+            <form action="" class="container__available">
+                <label for="check-in" class="container__label-check-in">Check-in
+                <input type="date" name="check-in" id="check-in" class="format-input">
+                </label>
+
+                <label for="check-out" class="container__label-check-out">Check-out
+                <input type="date" name="check-out" id="check-out" class="format-input">
+                </label>
+
+                <label for="adults" class="container__label-adults">Adults
+                <input type="number" name="adults" id="adults" class="format-input">
+                </label>
+
+                <label for="children" class="container__label-children">Children
+                <input type="number" name="children" id="children" class="format-input">
+                </label>
+
+                <button type="button" class="container__available--button format-button">Availability</button>
+            </form>
+        </aside>
+    </div>
+    <!-- FIN FORMULARIO DE DIPONIBLE -->
 </body>
 
 </html>

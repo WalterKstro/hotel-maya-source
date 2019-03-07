@@ -1,0 +1,11 @@
+.format-button{
+	padding: $space-xsm $space-md;
+	border: none;
+	background-color: $green;
+	color: $light;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-family: $font-text,Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: $text-md;
+	cursor: pointer;
+}
