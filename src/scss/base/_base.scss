@@ -11,8 +11,11 @@ body,html{
 	
 }
 
-h1,h2,h2{
+h1,h2,h3{
 	font-family: $font-header,Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: $coffee;
 }
 p{
 	font-family: $font-text,Arial, "Helvetica Neue", Helvetica, sans-serif;
