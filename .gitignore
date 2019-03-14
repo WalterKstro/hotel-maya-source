@@ -7,4 +7,5 @@ node_modules
 *.sass.map
 *.scss.map
 
-
+### folter dist ###
+dist/
