@@ -1,31 +1,54 @@
 *,
 *::before,
-*::after{
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
 
-body,html{
-	font-size: 16px;	
-	
+body,
+html {
+   font-size: 16px;
+
 }
 
-h1,h2,h3{
-	font-family: $font-header,Arial, "Helvetica Neue", Helvetica, sans-serif;
-	text-transform: uppercase;
-	font-weight: bold;
-	color: $coffee;
+h1,
+h2,
+h3 {
+   font-family: $font-header, Arial, "Helvetica Neue", Helvetica, sans-serif;
+   text-transform: uppercase;
+   font-weight: bold;
+   color: $coffee;
 }
-p{
-	font-family: $font-text,Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+h1 {
+   font-size: $h1;
 }
-a{
-	text-decoration: none;
-	font-family: $font-text,Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+h2 {
+   font-size: $h2;
 }
-img{
-	width: 100%;
-	height: auto;
-	display: block;
+
+h3 {
+   font-size: $h3;
+}
+
+p {
+   font-family: $font-text, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+   text-decoration: none;
+   font-family: $font-text, Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+img {
+   width: 100%;
+   height: auto;
+   display: block;
+}
+
+ul,
+li {
+   list-style: none;
 }

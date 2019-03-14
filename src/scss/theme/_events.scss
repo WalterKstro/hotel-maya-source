@@ -1,0 +1,97 @@
+.full-container__events {
+    background-color: $light;
+}
+
+.events {
+    padding: $space-md 0;
+
+    &__title {
+        font-size: $h2;
+    	margin-bottom: $space-md;
+    }
+
+    &__cards {
+    	@media screen and (min-width: 768px){
+    		display: grid;
+    		grid-template-columns: repeat(6,1fr);
+    		grid-template-rows: repeat(2,1fr);
+    		grid-gap:20px;
+    		align-items: center
+    	}
+    	@media screen and (min-width: 1200px){
+    		grid-template-columns: repeat(12,1fr);
+    		grid-template-rows: auto;
+    		grid-column-gap:20px;
+    	}
+    	&_1{
+    		grid-column:1 / span 3 ;
+    		grid-row: span 1;
+    		@media screen and (min-width: 1200px){
+    			grid-column:1 / span 3 ;
+    			grid-row: span 1;
+    		}
+    	}
+    	&_2{
+    		grid-column:4 / span 3 ;
+    		grid-row: span 1;
+    		@media screen and (min-width: 1200px){
+    			grid-column:4 / span 3 ;
+    			grid-row: span 1;
+    		}
+    	}
+    	&_3{
+    		grid-column:1 / span 3 ;
+    		grid-row: 2 / span 1;
+    		@media screen and (min-width: 1200px){
+    			grid-column:7 / span 3 ;
+    			grid-row: span 1;
+    		}
+    	}
+    	&_4{
+    		grid-column:4 / span 3 ;
+    		grid-row: 2 / span 1;
+    		@media screen and (min-width: 1200px){
+    			grid-column:10 / span 3 ;
+    		grid-row: span 1;
+    		}
+    	}
+    }
+
+    &__card {
+    	height: 100%;
+
+    	margin-bottom: $space-md;
+    	@media screen and (min-width: 768px){
+    		margin-bottom: 0;
+    		display: flex;
+    		flex-direction: column;
+    		justify-content: space-between;
+    	}
+
+    }
+
+    &__subtitle {
+        font-size: $h3;
+    	margin-bottom: $space-xsm;
+    }
+
+    &__image {
+    	margin-bottom: $space-sm;
+    	@media screen and (min-width: 768px){
+    		margin-bottom: 0;
+    	}
+        @media screen and (min-width: 1200px){
+            margin-bottom: $space-xsm;
+        }
+    	
+    }
+
+    &_btn {
+    	font-size: $text-sm;
+    	background-color: $coffee;
+    }
+
+    &__texto {
+    	font-size: $text-lg;
+    }
+}

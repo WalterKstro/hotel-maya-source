@@ -7,110 +7,183 @@
 <!--<![endif]-->
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HOME | MAYA HOTEL</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>HOME | MAYA HOTEL</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <!--[if lt IE 7]>
+   <!--[if lt IE 7]>
          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
-    <!-- NAVEGACION PRINCIPAL TOP -->
-    <div class="full-container__navigation">
-        <header class="container--header full-container">
-            <div class="container__brand"><img src="images/logo.svg" alt="logo maya"></div>
-            <div class="container__navegation">
-                <nav class="container__nav" id="nav">
-                    <a href="#" class="container__link">Home</a>
-                    <a href="#" class="container__link">About Us</a>
-                    <a href="#" class="container__link">Restaurant</a>
-                    <a href="#" class="container__link">Rooms</a>
-                    <a href="#" class="container__link">Events</a>
-                    <a href="#" class="container__link">Make A Reservation</a>
-                    <a href="#" class="container__link">Contact Us</a>
-                </nav>
-                <!-- Boton toogle -->
-                <button class="hamburger hamburger--slider container__toogle" type="button">
-                    <span class="hamburger-box">
-                        <span class="hamburger-inner"></span>
-                    </span>
-                </button>
+   <!-- NAVEGACION PRINCIPAL TOP -->
+   <div class="full-container__navigation">
+      <header class="container--header full-container">
+         <div class="container__brand"><img src="images/logo.svg" alt="logo maya"></div>
+         <div class="container__navegation">
+            <nav class="container__nav" id="nav">
+               <a href="#" class="container__link">Home</a>
+               <a href="#" class="container__link">About Us</a>
+               <a href="#" class="container__link">Restaurant</a>
+               <a href="#" class="container__link">Rooms</a>
+               <a href="#" class="container__link">Events</a>
+               <a href="#" class="container__link">Make A Reservation</a>
+               <a href="#" class="container__link">Contact Us</a>
+            </nav>
+            <!-- Boton toogle -->
+            <button class="hamburger hamburger--slider container__toogle" type="button">
+               <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+               </span>
+            </button>
+         </div>
+      </header>
+   </div>
+   <!-- FIN NAVEGACION PRINCIPAL TOP -->
+   <!-- BANNER MAKE RESERVATION -->
+   <div class="full-container__banner">
+      <img srcset="images/banner_movil.jpg 480w,images/banner_tablet.jpg 900w,images/banner_desktop.jpg 1920w" alt="banner logo">
+      <div class="banner__content full-container">
+         <h1 class="banner__content--title">Make your <span>reservation today</span></h1>
+         <button type="button" class="banner__content--get format-button">Get a Reservation</button>
+      </div>
+   </div>
+   <!-- FIN BANNER MAKE RESERVATION -->
+
+   <!-- FORMULARIO DE DIPONIBLE -->
+   <div class="full-container__available">
+      <aside class="full-container">
+         <form action="" class="container__available">
+            <label for="check-in" class="container__label-check-in">Check-in
+               <input type="date" name="check-in" id="check-in" class="format-input">
+            </label>
+
+            <label for="check-out" class="container__label-check-out">Check-out
+               <input type="date" name="check-out" id="check-out" class="format-input">
+            </label>
+
+            <label for="adults" class="container__label-adults">Adults
+               <input type="number" name="adults" id="adults" class="format-input">
+            </label>
+
+            <label for="children" class="container__label-children">Children
+               <input type="number" name="children" id="children" class="format-input">
+            </label>
+
+            <button type="button" class="container__available--button format-button">Availability</button>
+         </form>
+      </aside>
+   </div>
+   <!-- FIN FORMULARIO DE DIPONIBLE -->
+
+   <!-- EVENTOS -->
+   <div class="full-container__events">
+      <div class="full-container events">
+         <h2 class="events__title">Next Events</h2>
+         <div class="events__cards">
+            <div class="events__card events__cards_1">
+               <h3 class="events__subtitle">TOUR OF THE MAYA RUINS</h3>
+               <p class="events__texto">A tour of the Maya civilization of Guatemala</p>
+               <img src="images/place_01.jpg" alt="fondo de post" class="events__image">
+               <button class="events_btn format-button">More information</button>
             </div>
-        </header>
-    </div>
-    <!-- FIN NAVEGACION PRINCIPAL TOP -->
-    <!-- BANNER MAKE RESERVATION -->
-    <div class="full-container__banner">
-       <img srcset="images/banner_movil.jpg 480w,images/banner_tablet.jpg 900w,images/banner_desktop.jpg 1920w" alt="banner logo">
-        <div class="banner__content full-container">
-            <h1 class="banner__content--title">Make your <span>reservation today</span></h1>
-            <button type="button" class="banner__content--get format-button">Get a Reservation</button>
-        </div>
-    </div>
-    <!-- FIN BANNER MAKE RESERVATION -->
-
-    <!-- FORMULARIO DE DIPONIBLE -->
-    <div class="full-container__available">
-        <aside class="full-container">
-            <form action="" class="container__available">
-                <label for="check-in" class="container__label-check-in">Check-in
-                <input type="date" name="check-in" id="check-in" class="format-input">
-                </label>
-
-                <label for="check-out" class="container__label-check-out">Check-out
-                <input type="date" name="check-out" id="check-out" class="format-input">
-                </label>
-
-                <label for="adults" class="container__label-adults">Adults
-                <input type="number" name="adults" id="adults" class="format-input">
-                </label>
-
-                <label for="children" class="container__label-children">Children
-                <input type="number" name="children" id="children" class="format-input">
-                </label>
-
-                <button type="button" class="container__available--button format-button">Availability</button>
-            </form>
-        </aside>
-    </div>
-    <!-- FIN FORMULARIO DE DIPONIBLE -->
-
-    <!-- EVENTOS -->
-    <div class="full-container__events">
-        <div class="full-container events">
-            <h2 class="events__title">Next Events</h2>
-            <div class="events__cards">
-                <div class="events__card events__cards_1">
-                    <h3 class="events__subtitle">TOUR OF THE MAYA RUINS</h3>
-                    <p class="events__texto">A tour of the Maya civilization of Guatemala</p>
-                    <img src="images/place_01.jpg" alt="fondo de post" class="events__image">
-                    <button class="events_btn format-button">More information</button>
-                </div>
-                <div class="events__card events__cards_2">
-                    <h3 class="events__subtitle">A BOAT RIDE ON LAKE ITZA</h3>
-                    <p class="events__texto">A tour of the Maya civilization of Guatemala</p>
-                    <img src="images/place_02.jpg" alt="fondo de post" class="events__image">
-                    <button class="events_btn format-button">More information</button>
-                </div>
-                <div class="events__card events__cards_3">
-                    <h3 class="events__subtitle">TOUR OF THE MAYA BIOSPERE</h3>
-                    <p class="events__texto">A tour of the Maya civilization of Guatemala</p>
-                    <img src="images/place_03.jpg" alt="fondo de post" class="events__image">
-                    <button class="events_btn format-button">More information</button>
-                </div>
-                <div class="events__card events__cards_4">
-                    <h3 class="events__subtitle">EXPLORING THE MAYA CULTURE </h3>
-                    <p class="events__texto">A tour of the Maya civilization of Guatemala</p>
-                    <img src="images/place_04.jpg" alt="fondo de post" class="events__image">
-                    <button class="events_btn format-button">More information</button>
-                </div>
+            <div class="events__card events__cards_2">
+               <h3 class="events__subtitle">A BOAT RIDE ON LAKE ITZA</h3>
+               <p class="events__texto">A tour of the Maya civilization of Guatemala</p>
+               <img src="images/place_02.jpg" alt="fondo de post" class="events__image">
+               <button class="events_btn format-button">More information</button>
             </div>
-        </div>
-    </div>
-    <!-- FIN EVENTOS -->
+            <div class="events__card events__cards_3">
+               <h3 class="events__subtitle">TOUR OF THE MAYA BIOSPERE</h3>
+               <p class="events__texto">A tour of the Maya civilization of Guatemala</p>
+               <img src="images/place_03.jpg" alt="fondo de post" class="events__image">
+               <button class="events_btn format-button">More information</button>
+            </div>
+            <div class="events__card events__cards_4">
+               <h3 class="events__subtitle">EXPLORING THE MAYA CULTURE </h3>
+               <p class="events__texto">A tour of the Maya civilization of Guatemala</p>
+               <img src="images/place_04.jpg" alt="fondo de post" class="events__image">
+               <button class="events_btn format-button">More information</button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- FIN EVENTOS -->
+
+   <!-- NEWSLETTER -->
+
+   <div class="full-container newletter">
+      <h3 class="newletter__title">SUSCRIBE OUR NEWSLETTER</h3>
+      <input type="email" name="newletter" placeholder="Enter your email" class="format-input newletter__input">
+      <input type="submit" name="submit" value="SUSCRIBE NOW" class="newletter__btn format-button">
+   </div>
+
+   <!-- FIN NEWSLETTER -->
+
+   <!-- OUR ROOMS -->
+
+   <div class="container--rooms">
+      <div class="full-container room">
+         <h2 class="room__title">OUR ROOMS</h2>
+         <div class="room__content">
+            <div class="room_card room-1">
+               <div class="room__description">
+                  <h3 class="room__subtitle">ROOM FOR RELAX</h3>
+                  <p class="room__text">Die Substanz der Alten Kanzlei, immerhin fast 350 Jahre alt</p>
+                  <button type="button" class="format-button room__btn">MORE INFORMATION</button>
+               </div>
+               <div class="room__image">
+                  <img src="images/room_01.jpg" align="room number one" class="room__image">
+               </div>
+            </div>
+            <div class="room_card room-2">
+               <div class="room__description">
+                  <h3 class="room__subtitle">ROOM FOR RELAX</h3>
+                  <p class="room__text">Die Substanz der Alten Kanzlei, immerhin fast 350 Jahre alt</p>
+                  <button type="button" class="format-button room__btn">MORE INFORMATION</button>
+               </div>
+               <div class="room__image">
+                  <img src="images/room_02.jpg" align="room number one" class="room__image">
+               </div>
+            </div>
+            <div class="room_card room-3">
+               <div class="room__description">
+                  <h3 class="room__subtitle">ROOM FOR RELAX</h3>
+                  <p class="room__text">Die Substanz der Alten Kanzlei, immerhin fast 350 Jahre alt</p>
+                  <button type="button" class="format-button room__btn">MORE INFORMATION</button>
+               </div>
+               <div class="room__image">
+                  <img src="images/room_03.jpg" align="room number one" class="room__image">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- FIN OUR ROOMS -->
+
+   <!-- FOOTER -->
+   <footer class="container-footer">
+      <div class="full-container footer">
+         <div class="footer__social">
+            <i class="footer__icon fab fa-facebook-square"></i>
+            <i class="footer__icon fab fa-twitter"></i>
+         </div>
+         <div class="footer__about">
+            <p class="footer__copy">Copyright @ Hotel Maya 2019</p>
+            <ul class="footer__list">
+               <li><a href="#" class="footer__link">Terms of privacity</a></li>
+               <li><a href="#" class="footer__link">Terms of use</a></li>
+               <li><a href="#" class="footer__link">Site map</a></li>
+            </ul>
+         </div>
+      </div>
+   </footer>
+   <!-- FIN FOOTER -->
+
+   <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
 </body>
 
 </html>

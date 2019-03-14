@@ -1,0 +1,60 @@
+.container-footer {
+   background-color: $dark;
+   padding: $space-md 0;
+}
+
+.footer {
+   &__icon {
+      color: $green;
+      font-size: $text-lg;
+      margin-right: $space-sm;
+   }
+
+   &__about::before {
+      content: '';
+      display: block;
+      width: 100%;
+      border: 1px solid $light;
+      color: $light;
+      margin: $space-xsm 0;
+   }
+
+   &__about,
+   &__link {
+      color: $green;
+      font-size: $text-sm;
+   }
+
+   &__link {
+      @media screen and (min-width: 768px) {
+         margin-left: $space-md;
+      }
+   }
+
+   &__social {
+      display: flex;
+      justify-content: center;
+
+      @media screen and (min-width: 768px) {
+         justify-content: flex-end;
+      }
+   }
+
+   &__copy {
+      text-align: center;
+
+      @media screen and (min-width: 768px) {
+         text-align: left;
+      }
+   }
+
+   &__list {
+
+      display: flex;
+      justify-content: space-evenly;
+
+      @media screen and (min-width: 768px) {
+         justify-content: flex-end;
+      }
+   }
+}
